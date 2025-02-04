@@ -37,8 +37,8 @@ Describe 'Set-TLSConfig' {
     It 'Should enable multiple TLS versions when specified' {
         Set-TLSConfig -Protocol Tls12, Tls13
         $result = [System.Net.ServicePointManager]::SecurityProtocol
-                ($result -band [System.Net.SecurityProtocolType]::Tls12) | Should -Be [System.Net.SecurityProtocolType]::Tls12
-                ($result -band [System.Net.SecurityProtocolType]::Tls13) | Should -Be [System.Net.SecurityProtocolType]::Tls13
+                ($result -band [System.Net.SecurityProtocolType]::Tls12) | Should -Be Tls12
+                ($result -band [System.Net.SecurityProtocolType]::Tls13) | Should -Be Tls13
     }
 
     It 'Should not remove existing TLS settings when adding new ones' {
