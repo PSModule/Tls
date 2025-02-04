@@ -1,4 +1,11 @@
-﻿Describe 'Get-TLSConfig' {
+﻿[Diagnostics.CodeAnalysis.SuppressMessageAttribute(
+    'PSUseDeclaredVarsMoreThanAssignments', '',
+    Justification = 'Pester code blocks'
+)]
+[CmdletBinding()]
+param()
+
+Describe 'Get-TLSConfig' {
     It 'Should return the current TLS configuration by default' {
         $result = Get-TLSConfig
         $expectedTypes = [System.Net.SecurityProtocolType]
