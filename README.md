@@ -1,25 +1,25 @@
-# Tls
+# TLS
 
-Tls is a PowerShell module for working with TLS settings.
+TLS is a PowerShell module for working with TLS settings.
 
 ## Installation
 
 Install the module from the PowerShell Gallery:
 
 ```powershell
-Install-PSResource -Name Tls
-Import-Module -Name Tls
+Install-PSResource -Name TLS
+Import-Module -Name TLS
 ```
 
 ## Documentation
 
-Documentation is published at [psmodule.io/Tls](https://psmodule.io/Tls/).
+Documentation is published at [psmodule.io/TLS](https://psmodule.io/TLS/).
 
 Use PowerShell help and command discovery for module details:
 
 ```powershell
-Get-Command -Module Tls
-Get-Help <CommandName> -Examples
+Get-Command -Module TLS
+Get-Help Get-TLSConfig -Examples
 ```
 
 ## Contributing
